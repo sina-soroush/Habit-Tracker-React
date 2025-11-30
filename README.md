@@ -16,6 +16,13 @@ A beautiful and intuitive habit tracking application built with React and Vite. 
 - 💾 **Local Storage** - All data saved locally in your browser
 - 🎯 **Beautiful UI** - Modern neumorphic design with smooth animations
 
+## 🔗 Preview
+
+You can view the live version of this project here:  
+👉 https://habit-tracker-react-swart.vercel.app/
+
+<img width="1920" height="1080" alt="Habit-Tracker-App" src="https://github.com/user-attachments/assets/5cfd6773-9270-492d-b1d6-ae6d2af42703" />
+
 ## 🚀 Getting Started
 
 ### Prerequisites
