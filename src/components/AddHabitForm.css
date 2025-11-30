@@ -1,0 +1,110 @@
+.add-habit-trigger {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.add-habit-form {
+  max-width: 50rem;
+  margin: 0 auto 3rem;
+  animation: slideIn 0.3s ease;
+}
+
+.add-habit-form--closing {
+  animation: slideOut 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.form-title {
+  font-size: 2.4rem;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--greyDark);
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.color-picker {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.color-option {
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+}
+
+.color-option--selected {
+  box-shadow: 0 0 0 3px var(--white),
+              0 0 0 5px var(--primary);
+  transform: scale(1.1);
+}
+
+.form-select {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  box-shadow: var(--inner-shadow);
+  background: transparent;
+  padding: 1.2rem 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  color: var(--greyDark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-select:focus {
+  box-shadow: var(--shadow);
+}
+
+.form-actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+}

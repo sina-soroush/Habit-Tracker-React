@@ -1,0 +1,117 @@
+.habit-item {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.habit-item__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--greyLight-2);
+}
+
+.habit-item__color {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  flex-shrink: 0;
+}
+
+.habit-item__info {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.habit-item__name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--greyDark);
+  margin-bottom: 0.5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.habit-item__description {
+  font-size: 1.2rem;
+  color: var(--greyLight-3);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.habit-item__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.habit-item__streak {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--greyLight-1);
+  box-shadow: var(--inner-shadow);
+  min-width: 8rem;
+}
+
+.streak-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.streak-label {
+  font-size: 1.1rem;
+  color: var(--greyDark);
+  margin-top: 0.3rem;
+}
+
+.streak-emoji {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+.habit-item__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.habit-item__delete {
+  background: var(--greyLight-1);
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  color: var(--greyDark);
+  box-shadow: var(--shadow);
+  font-weight: 500;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.2rem;
+}

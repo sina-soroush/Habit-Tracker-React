@@ -1,0 +1,47 @@
+.streak-counter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.streak-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: var(--greyLight-1);
+  box-shadow: var(--inner-shadow);
+  transition: all 0.3s ease;
+}
+
+.streak-stat:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-3px);
+}
+
+.streak-stat__value {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.streak-stat__label {
+  font-size: 1.2rem;
+  color: var(--greyDark);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.streak-stat__icon {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .streak-counter {
+    grid-template-columns: 1fr;
+  }
+}

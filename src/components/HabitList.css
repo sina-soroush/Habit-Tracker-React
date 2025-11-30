@@ -1,0 +1,46 @@
+.habit-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .habit-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.habit-list--empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem;
+  border-radius: 2rem;
+  background: var(--greyLight-1);
+  box-shadow: var(--inner-shadow);
+}
+
+.empty-state__icon {
+  font-size: 6rem;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.empty-state__title {
+  font-size: 2.4rem;
+  color: var(--greyDark);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.empty-state__text {
+  font-size: 1.4rem;
+  color: var(--greyLight-3);
+}

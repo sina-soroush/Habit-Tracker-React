@@ -1,0 +1,73 @@
+.progress-charts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+  justify-items: center;
+}
+
+.chart-card {
+  grid-column: span 1;
+}
+
+.chart-card--small {
+  grid-column: span 1;
+}
+
+.chart-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.chart-container {
+  position: relative;
+  height: 30rem;
+  width: 100%;
+}
+
+.chart-container--doughnut {
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.doughnut-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+}
+
+.doughnut-percentage {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+@media screen and (max-width: 1024px) {
+  .progress-charts {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-card,
+  .chart-card--small {
+    grid-column: span 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .chart-container {
+    height: 25rem;
+  }
+
+  .chart-container--doughnut {
+    height: 20rem;
+  }
+}

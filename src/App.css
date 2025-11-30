@@ -1,13 +1,20 @@
+:root {
+  --active-tab-color: #00a8b5;
+}
+
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background: var(--greyLight-1);
+  position: relative;
 }
 
 .app-header {
   padding: 2rem;
   text-align: center;
+  position: relative;
+  z-index: 100;
 }
 
 .app-header h1 {
@@ -23,4 +30,31 @@
   max-width: 120rem;
   margin: 0 auto;
   width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.content-area {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.empty-message {
+  text-align: center;
+  padding: 6rem 2rem;
+  font-size: 1.8rem;
+  color: var(--greyDark);
+  background: var(--greyLight-1);
+  border-radius: 2rem;
+  box-shadow: var(--inner-shadow);
 }
