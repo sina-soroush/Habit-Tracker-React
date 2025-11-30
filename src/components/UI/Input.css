@@ -1,0 +1,21 @@
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  box-shadow: var(--inner-shadow);
+  background: transparent;
+  padding: 1.2rem 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  color: var(--greyDark);
+  transition: all 0.3s ease;
+}
+
+.input::placeholder {
+  color: var(--greyLight-3);
+}
+
+.input:focus {
+  box-shadow: var(--shadow);
+}

@@ -1,34 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Button from './components/UI/Button'
+import Input from './components/UI/Input'
+import Checkbox from './components/UI/Checkbox'
+import Card from './components/UI/Card'
+import { useState } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [checked, setChecked] = useState(false)
+  const [inputValue, setInputValue] = useState('')
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="app">
+      <header className="app-header">
+        <h1>Habit Tracker</h1>
+      </header>
+      <main className="app-main">
+        <Card>
+          <h2 style={{ marginBottom: '2rem', color: 'var(--primary)' }}>Testing UI Components</h2>
+          
+          <div style={{ marginBottom: '2rem' }}>
+            <Input 
+              placeholder="Enter habit name..."
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+            />
+          </div>
+
+          <div style={{ marginBottom: '2rem', display: 'flex', gap: '1rem' }}>
+            <Button variant="primary">Primary Button</Button>
+            <Button variant="secondary">Secondary Button</Button>
+          </div>
+
+          <Checkbox 
+            id="test-checkbox"
+            checked={checked}
+            onChange={() => setChecked(!checked)}
+            label="Mark as completed"
+          />
+        </Card>
+      </main>
+    </div>
   )
 }
 
