@@ -58,3 +58,32 @@
   border-radius: 2rem;
   box-shadow: var(--inner-shadow);
 }
+
+@media screen and (max-width: 768px) {
+  .app-header {
+    padding: 1.5rem 1rem;
+  }
+
+  .app-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .app-main {
+    padding: 1rem;
+  }
+
+  .empty-message {
+    padding: 4rem 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .app-main {
+    padding: 0.5rem;
+  }
+}

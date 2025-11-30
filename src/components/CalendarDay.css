@@ -60,3 +60,54 @@
   font-weight: 600;
   margin-left: 0.2rem;
 }
+
+@media screen and (max-width: 768px) {
+  .calendar-day {
+    padding: 0.6rem;
+  }
+
+  .calendar-day__number {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .calendar-day__indicators {
+    gap: 0.2rem;
+    margin-top: 0.4rem;
+  }
+
+  .calendar-day__dot {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  .calendar-day__more {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .calendar-day {
+    padding: 0.4rem;
+    border-radius: 0.8rem;
+  }
+
+  .calendar-day__number {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .calendar-day__indicators {
+    gap: 0.15rem;
+    margin-top: 0.3rem;
+  }
+
+  .calendar-day__dot {
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+
+  .calendar-day__more {
+    font-size: 0.8rem;
+  }
+}

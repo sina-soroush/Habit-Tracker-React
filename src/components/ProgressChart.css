@@ -54,20 +54,58 @@
 @media screen and (max-width: 1024px) {
   .progress-charts {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .chart-card,
   .chart-card--small {
     grid-column: span 1;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .progress-charts {
+    margin-bottom: 2rem;
+  }
+
+  .chart-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
   .chart-container {
     height: 25rem;
   }
 
   .chart-container--doughnut {
     height: 20rem;
+  }
+
+  .doughnut-percentage {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .progress-charts {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .chart-title {
+    font-size: 1.6rem;
+  }
+
+  .chart-container {
+    height: 20rem;
+  }
+
+  .chart-container--doughnut {
+    height: 18rem;
+  }
+
+  .doughnut-percentage {
+    font-size: 2.5rem;
   }
 }

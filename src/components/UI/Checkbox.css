@@ -53,3 +53,35 @@
     transform: scale(1);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .checkbox-wrapper {
+    width: 8rem;
+  }
+
+  .checkbox-label {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.6rem;
+  }
+
+  .checkbox-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .checkbox-wrapper {
+    width: 7rem;
+  }
+
+  .checkbox-label {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.4rem;
+  }
+
+  .checkbox-text {
+    font-size: 1.2rem;
+  }
+}

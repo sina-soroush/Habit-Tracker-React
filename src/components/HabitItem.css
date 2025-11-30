@@ -115,3 +115,77 @@
   justify-content: center;
   width: 9.2rem;
 }
+
+@media screen and (max-width: 768px) {
+  .habit-item__header {
+    gap: 1rem;
+  }
+
+  .habit-item__color {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .habit-item__name {
+    font-size: 1.6rem;
+  }
+
+  .habit-item__description {
+    font-size: 1.1rem;
+  }
+
+  .habit-item__body {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .habit-item__streak {
+    width: 100%;
+  }
+
+  .habit-item__actions {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .habit-item__delete {
+    width: auto;
+    min-width: 8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .habit-item__header {
+    gap: 0.8rem;
+    padding-bottom: 1rem;
+  }
+
+  .habit-item__color {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .habit-item__name {
+    font-size: 1.4rem;
+  }
+
+  .habit-item__description {
+    font-size: 1rem;
+  }
+
+  .streak-number {
+    font-size: 2.5rem;
+  }
+
+  .streak-label {
+    font-size: 1rem;
+  }
+
+  .habit-item__delete {
+    font-size: 1.2rem;
+    padding: 0.7rem 1.2rem;
+  }
+}
