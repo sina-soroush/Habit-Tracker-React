@@ -19,7 +19,7 @@ A beautiful and intuitive habit tracking application built with React and Vite. 
 ## 🔗 Preview
 
 You can view the live version of this project here:  
-👉 https://habit-tracker-react-swart.vercel.app/
+👉 https://habit-tracker-react-azure.vercel.app/
 
 <img width="1920" height="1080" alt="Habit-Tracker-App" src="https://github.com/user-attachments/assets/5cfd6773-9270-492d-b1d6-ae6d2af42703" />
 
